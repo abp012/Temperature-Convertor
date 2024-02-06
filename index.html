@@ -4,36 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Convertor</title>
-    <style>
-        h1{
-            text-align: center;
-        }
-        body{
-            padding: 50px 350px;
-            /* background-color: aqua; */
-        }
-        #container{
-            width: 800px;
-            background-color: aqua;
-            text-align: center;
-            padding: 50px;
-        }
-        .input-div{
-            display: inline-block
-        }
-        .input{
-            text-align: center;
-            font-size: 25px;
-            font-weight: bold;
-            height:50px;
-            margin: 10px;
-
-        }
-        label{
-            font-size: 25px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Temperature Convertor</h1>
@@ -47,29 +18,6 @@
             <input type="number" value="32" class="input" id="fah">
         </div>
     </div>
-    <script>
-        let cel=document.getElementById("cel");
-        let fah=document.getElementById("fah");
-        // console.log(cel);
-        // console.log(fah);
-        cel.addEventListener("input",function(){
-            //console.log("celsius changed...");
-            let c=this.value;
-            let f=(c * 9/5) + 32;
-            if(!Number.isInteger(f)){
-                f=f.toFixed(4);
-            }
-            fah.value=f;
-        });
-        fah.addEventListener("input",function(){
-            //console.log("fahrenheit changed...");
-            let f=this.value;
-            let c=(5/9)*(f - 32);
-            if(!Number.isInteger(c)){
-                c=c.toFixed(4);
-            }
-            cel.value=c;
-        }); 
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
