@@ -1,0 +1,27 @@
+h1{
+            text-align: center;
+        }
+        body{
+            padding: 50px 350px;
+            /* background-color: aqua; */
+        }
+        #container{
+            width: 800px;
+            background-color: aqua;
+            text-align: center;
+            padding: 50px;
+        }
+        .input-div{
+            display: inline-block
+        }
+        .input{
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            height:50px;
+            margin: 10px;
+
+        }
+        label{
+            font-size: 25px;
+        }
